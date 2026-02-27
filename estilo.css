@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    margin: 0;
+}
+
+.gridContainer_calc {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-auto-rows: 60px;
+    gap: 8px;
+    background-color: #1e272e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.gridItem {
+    background-color: #2f3640;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    user-select: none;
+}
+
+.gridItem:hover {
+    background-color: #40739e;
+    transform: scale(1.05);
+}
+
+.gridItem:active {
+    transform: scale(0.95);
+}
+
+.gridItem:nth-child(1) {
+    grid-column: 1 / -1;
+    justify-content: right;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.gridItem:nth-child(17) {
+    grid-row: span 2;
+}
+.gridItem:nth-child(18) {
+    grid-column: span 2;
+}
+#display {
+    text-align: right;
+    background-color: #000;
+    font-size: 28px;
+    padding: 10px;
+    border: none;
+}
+
+#clear {
+    background-color: #c23616;
+}
+#clear:hover {
+    background-color: #ff5e3a;
+}
+

@@ -7,7 +7,7 @@ buttons.forEach(button => {
   button.addEventListener("click", () => {
     let value = button.textContent;
 
-    if (value === "AC") {
+    if (value === "C") {
       currentInput = "";
       display.value = "";
       return;

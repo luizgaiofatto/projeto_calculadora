@@ -25,7 +25,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
-    font-size: 18px;
+    font-size: 24px;
     user-select: none;
 }
 
@@ -42,26 +42,28 @@ body {
     grid-column: 1 / -1;
     justify-content: right;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 32px;
 }
+
+.gridItem:nth-child(2) {
+    grid-column: span 2;
+}
+
 .gridItem:nth-child(17) {
-    grid-row: span 2;
-}
-.gridItem:nth-child(18) {
     grid-column: span 2;
 }
 #display {
     text-align: right;
     background-color: #000;
     font-size: 28px;
-    padding: 10px;
+    padding: 28px;
     border: none;
 }
 
-#clear {
+.operadores {
     background-color: #c23616;
 }
-#clear:hover {
+.operadores:hover {
     background-color: #ff5e3a;
 }
 
